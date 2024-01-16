@@ -14,4 +14,6 @@ console.log(`Destinos possíveis:`);
 // console.log(salvador, saoPaulo, rioDeJaneiro);
 console.log(listaDeDestinos);
 
-
+listaDeDestinos.splice(1,1); // removendo um item na lista
+console.log(listaDeDestinos);
+console.log(listaDeDestinos[1]);
