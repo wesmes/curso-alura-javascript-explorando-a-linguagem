@@ -17,15 +17,19 @@ console.log(listaDeDestinos);
 const podeComprar = idadeComprador >= 18 || estaAcompanhada == true;
 
 let contador = 0;
+let destinoExiste = false;
+
 while (contador < 3) {
-    console.log(listaDeDestinos[contador]);
+    
     if (listaDeDestinos[contador] == destino) {
         console.log("Destino existe");
-    } else {
-        console.log("Destino não existe");
-    }
+        destinoExiste = true;
+        break;
+    } 
     contador++;
 }
+
+console.log("Destino existe: ", destinoExiste);
 
 // if (podeComprar) {
 //     console.log("Boa viagem!");
